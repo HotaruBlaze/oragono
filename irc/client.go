@@ -32,7 +32,8 @@ import (
 
 const (
 	// maximum line length not including tags; don't change this for a public server
-	MaxLineLen = 512
+	// MaxLineLen = 512
+	MaxLineLen = 2048
 
 	// IdentTimeout is how long before our ident (username) check times out.
 	IdentTimeout         = time.Second + 500*time.Millisecond

@@ -7,10 +7,10 @@ capdef_file = ./irc/caps/defs.go
 all: install
 
 install:
-	go install -v -ldflags "-X main.commit=$(GIT_COMMIT)"
+	go install -v -ldflags "-X main.commit=$(GIT_COMMIT) -X main.version=v2.5.1-Phoenixs_TES3MP_Fork"
 
 build:
-	go build -v -ldflags "-X main.commit=$(GIT_COMMIT)"
+	go build -v -ldflags "-X main.commit=$(GIT_COMMIT) -X main.version=v2.5.1-Phoenixs_TES3MP_Fork"
 
 release:
 	goreleaser --skip-publish --rm-dist
