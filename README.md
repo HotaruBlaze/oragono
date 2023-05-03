@@ -11,6 +11,21 @@ Oragono is a fork of the [Ergonomadic](https://github.com/jlatt/ergonomadic) IRC
 
 ---
 
+## Quick start guide
+
+Download the latest release from this page: https://github.com/oragono/oragono/releases/latest
+
+Extract it into a folder, then run the following commands:
+
+```sh
+cp default.yaml ircd.yaml
+vim ircd.yaml   # modify the config file to your liking
+oragono mkcerts
+oragono run     # server should be ready to go!
+```
+
+---
+
 [![Go Report Card](https://goreportcard.com/badge/github.com/oragono/oragono)](https://goreportcard.com/report/github.com/oragono/oragono)
 [![Build Status](https://travis-ci.com/oragono/oragono.svg?branch=master)](https://travis-ci.com/oragono/oragono)
 [![Download Latest Release](https://img.shields.io/badge/downloads-latest%20release-green.svg)](https://github.com/oragono/oragono/releases/latest)
@@ -41,19 +56,6 @@ If you want to take a look at a running Oragono instance or test some client cod
 * `UBAN`, a unified ban system that can target IPs, networks, masks, and registered accounts (`KLINE` and `DLINE` are also supported)
 * [IRCv3 support](https://ircv3.net/software/servers.html)
 * a focus on developing with [specifications](https://oragono.io/specs.html)
-
-## Quick start guide
-
-Download the latest release from this page: https://github.com/oragono/oragono/releases/latest
-
-Extract it into a folder, then run the following commands:
-
-```sh
-cp default.yaml ircd.yaml
-vim ircd.yaml   # modify the config file to your liking
-oragono mkcerts
-oragono run     # server should be ready to go!
-```
 
 **Note:** See the [productionizing guide in our manual](https://github.com/oragono/oragono/blob/master/docs/MANUAL.md#productionizing-with-systemd) for recommendations on how to run a production network, including obtaining valid TLS certificates.
 
