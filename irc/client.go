@@ -33,7 +33,7 @@ import (
 
 const (
 	// maximum IRC line length, not including tags
-	DefaultMaxLineLen = 512
+	DefaultMaxLineLen = 2048
 
 	// IdentTimeout is how long before our ident (username) check times out.
 	IdentTimeout         = time.Second + 500*time.Millisecond

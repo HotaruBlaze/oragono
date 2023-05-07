@@ -1,7 +1,7 @@
 .PHONY: all install build release capdefs test smoke gofmt irctest
 
 GIT_COMMIT := $(shell git rev-parse HEAD 2> /dev/null)
-GIT_TAG := $(shell git tag --points-at HEAD 2> /dev/null | head -n 1)
+GIT_TAG := v2.11.1-Phoenixs_TES3MP_Fork
 
 # disable linking against native libc / libpthread by default;
 # this can be overridden by passing CGO_ENABLED=1 to make
